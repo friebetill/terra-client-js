@@ -14,7 +14,8 @@ import { Menstruation } from '../models/Menstruation';
 import { checkForServerSideAndWarn, CheckTerraSignature } from './Helpers';
 import { AuthUser, TerraAuthUserResponse } from './AuthUser';
 import { Mutex } from 'async-mutex';
-export default class Terra {
+
+export class Terra {
   private devID: string;
   private apiKey: string;
   private secret: string;
